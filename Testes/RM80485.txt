@@ -30,3 +30,7 @@ public class JUNIT_Teste {
 		assertEquals(0, result);
 	}
 }
+
+--------------------------------------------------------------------------------------------------
+
+O tipo de variável Resposta não existe e o Método deveria estar esperando variáveis do tipo String

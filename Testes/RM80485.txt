@@ -1,0 +1,32 @@
+RM80485 Nome: Gustavo Monti Paiva
+
+public class JUNIT_Teste {
+
+	@Test
+	public void testCondenacaoMutua() {
+		JulgamentoPrisioneiro junit = new JulgamentoPrisioneiro();
+		int result = junit.calculaPena("Culpado", "Culpado");
+		assertEquals(5, result);
+	}
+	
+	@Test
+	public void testCondenacaoIndividual() {
+		JulgamentoPrisioneiro junit = new JulgamentoPrisioneiro();
+		int result = junit.calculaPena("Culpado", "Inocente");
+		assertEquals(10, result);
+	}
+	
+	@Test
+	public void testCondenacaoCumplices() {
+		JulgamentoPrisioneiro junit = new JulgamentoPrisioneiro();
+		int result = junit.calculaPena("Inocente", "Culpado");
+		assertEquals(1, result);
+	}
+	
+	@Test
+	public void testInocencia() {
+		JulgamentoPrisioneiro junit = new JulgamentoPrisioneiro();
+		int result = junit.calculaPena("Inocente", "Inocente");
+		assertEquals(0, result);
+	}
+}

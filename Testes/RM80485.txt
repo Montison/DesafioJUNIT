@@ -92,3 +92,7 @@ public class JulgamentoPrisioneiro {
 }
 
 Valor de variável alterado.
+
+----------------------------------------------------------------------------------------------------
+
+Resultado esperado do testCondenacaoCumplices() era 1, porém o retorno foi 11

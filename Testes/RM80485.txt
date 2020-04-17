@@ -61,3 +61,7 @@ public class JulgamentoPrisioneiro {
 }
 
 Alterado o tipo de variável esperado no método e as validações.
+
+----------------------------------------------------------------------------------------------------
+
+Resultado esperado do testCondenacaoMutua() era 5, porem o retorno foi 15.
